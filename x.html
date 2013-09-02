@@ -1,0 +1,118 @@
+<html>
+<head>
+	<style type="text/css">
+	body {
+		color:black;
+	/*little bit of offtopic. just to show you that you can see what properties element has in realtime with firebug!*/	}
+	#search {
+		margin:20px;
+	} 
+
+	#field{
+		float:left;
+		width:200px;
+		height:27px;
+		line-height:30px;
+		text-indent:10px;
+		font-family: arial;
+		background: white;
+		border:solid 1px black;
+		border-right:none;
+		outline:none;
+	} 
+	.header {
+		background-color: black;
+		color: white;
+	}
+
+
+
+	.content {
+		background-color: grey ; 
+	}
+
+	#layer .hr {
+		border: none;
+		background-color: none; 
+		color: grey;
+		height: 2px;
+	}
+
+	#layer {
+
+		bottom: 20px;
+		position: absolute;
+		background: none;
+		padding: 7px;
+		border: solid 1px black;
+	}
+
+	#submit{
+		cursor:pointer;
+		width: 100px;
+		height:20px;
+		line-height: 0;
+		font-size: 0;
+		color: transparent;
+		background:  url("http://google.com/logo.jpeg");
+	}
+
+	.footter {
+		background-color: white;
+	}
+	#wrapper {
+		width:980px;
+		background: #fff; 
+		margin-left: auto; 
+		margin-right: auto; 
+		padding: 20px 46px 30px 20px;
+		margin-bottom: 5px; 
+	}
+	#search_form {
+		margin-left: auto;
+		margin-right: auto; /*hmm, doesnt work . sorry have no more time. we will continiue tomorrw,ok?хорошо. что почитать? begint to read that book about html and css that i have sent you.ок. что-то кодать тут? i think that it is ok if you will just follow the books advises...хорошо. хорошго дняtnx. next time mb it will better to lunch skype if окthere will be need. so can you add me ? skype:jrand0m ок tnx and hava nice evening!ок пока тогда :(cya :) dont get upset >:);((((((oh my . everithing will be alright . just have tenece to stydy and workout everything you learn by that way ) u ar nicehave nice day ) the same to u */
+	}
+	.autoCenter {
+		margin: 0 auto; /* first argument sets margin of top and bottom, second sets margin for left and right */
+		width: 400px; /*any block element tries to fill all avaliable space, so to restrict it we need to set width*/
+	}
+	/*now we need to give some space for elements. it can be done by two  ways*/
+	/*first way is to set margin for them, second - to set padding. difference is that margin is free space around elements border, and padding is free space between elements border and its contents*/
+	input[type="text"]{
+		margin: 10px;
+		height: 30px;
+	}
+	input[type="submit"]{
+		margin: 10px;
+		height: 30px;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">header</div>
+		<div class="content">			
+			<form id="search_form"> <!-- to make form be in the middle we must just say that margins to left and right of form are set to auto. -->
+				<div class="autoCenter">
+					<input id="field" name="field"type="text"/>
+					<input id ="submit"name ="submit" type="submit" value="Search"/>
+				</div>
+			</form><!-- your form must be in content section so lets move it  therre  --></div>
+			<div class="button">button</div>
+			<div id ="search"></div> 
+
+				<div class="footter">footter</div> <!-- now we need to place footter after the form. beacause div element has "display;block;"
+				by default it will try to take all space of dit with class "wrapper" -->
+			</div>
+		</body>
+		<!-- например как располагается футер в результате создания етих блоков!
+как ти уже наверное знаешь 
+есть 3 типа как елемент может рендерится в браузере 
+они определяются свойством display.
+ у некоторых елементов ето свойство задано изначально. остальние наследуют его из отцовского тега. 
+ есть три значения етого свойства
+ 1) block - заполняет всю возможную площадь родительского елемента
+ 2) inline - заполняет только то место которое нужно для отображения контента внутри елемента
+ 3) inline-block - гибрид между двумя: нужное пространство для контента + некоторие свойства блокового елемнета(задавать ширину например можна только блоковому елементу). теперь наблюдайем помалу, плиз.го-->
+</html>
